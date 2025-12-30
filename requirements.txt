@@ -8,3 +8,5 @@ beautifulsoup4
 sentence-transformers #Embedding
 faiss-cpu #Vector store
 chromadb #vector store
+langchain-groq
+python-dotenv
