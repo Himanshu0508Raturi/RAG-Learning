@@ -1,0 +1,10 @@
+langchain
+langchain-core
+langchain-community
+pypdf
+pymupdf
+ipykernel
+beautifulsoup4
+sentence-transformers #Embedding
+faiss-cpu #Vector store
+chromadb #vector store
