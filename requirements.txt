@@ -6,7 +6,10 @@ pymupdf
 ipykernel
 beautifulsoup4
 sentence-transformers #Embedding
-faiss-cpu #Vector store
+faiss-cpu #Vector store - Facebook AI Similarity Search
 chromadb #vector store
 langchain-groq
 python-dotenv
+boto3 # client for bedrock and other AWS services
+awscli # to manage AWS services from command line
+streamlit # to create web applications
