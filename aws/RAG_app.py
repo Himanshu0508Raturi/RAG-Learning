@@ -17,7 +17,7 @@ from langchain_core.prompts import PromptTemplate
 
 # Bedrock Client - Using Titan Embeddings G1 - Text By: Amazon Embedding model
 bedrock = boto3.client(service_name="bedrock-runtime")
-bedrock_embedding = BedrockEmbeddings(model_id="amazon.titan-embed-text-v1",client=bedrock)
+bedrock_embedding = BedrockEmbeddings(model_id="amazon.titan-embed-text-v2:0",client=bedrock)
 
 # Data Ingestion
 def data_ingestion():
