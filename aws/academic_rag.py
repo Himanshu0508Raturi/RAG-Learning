@@ -7,18 +7,12 @@ from langchain_groq import ChatGroq
 
 load_dotenv()
 
-# ------------------------------------
-# Load embedding model ONCE
-# ------------------------------------
-embedding_model = SentenceTransformer(
-    "sentence-transformers/all-MiniLM-L12-v2",
-    device="cpu"
-)
 
 # ------------------------------------
 # Pinecone Retrieval
 # ------------------------------------
 def retrieve_query(query, k=3):
+    embedding_model = SentenceTransformer("sentence-transformers/all-MiniLM-L12-v2")
     query_embedding = embedding_model.encode(query).tolist()
 
     pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
