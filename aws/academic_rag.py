@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 from dotenv import load_dotenv
-from pinecone.grpc import PineconeGRPC as Pinecone
+from pinecone import Pinecone
 from sentence_transformers import SentenceTransformer
 from langchain_groq import ChatGroq
 

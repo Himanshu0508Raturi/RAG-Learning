@@ -15,4 +15,6 @@ awscli # to manage AWS services from command line
 streamlit # to create web applications
 unstructured
 tiktoken
-pinecone-client
+pinecone
+langgraph
+ollama
